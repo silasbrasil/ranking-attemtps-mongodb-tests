@@ -1,0 +1,11 @@
+version: '3'
+
+services:
+  mongo:
+    image: mongo
+    environment:
+      MONGO_INITDB_DATABASE: campaign-ranking
+      MONGO_INITDB_ROOT_USERNAME: ranking
+      MONGO_INITDB_ROOT_PASSWORD: ranking
+    ports:
+      - 27017-27019:27017-27019
